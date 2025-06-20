@@ -30,43 +30,45 @@
                             class="rounded-circle " />
                         Sumaira</a>
                 </div>
-                <button class="navbar-toggler bg-white " type="button" data-bs-toggle="collapse "
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon text-white"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="#home">Home</a>
-                        </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link text-warning" aria-current="page" href="#about">About me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" aria-current="page" href="#services">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" aria-current="page" href="#skills">Skills
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" aria-current="page" href="#projects">Projects
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" aria-current="page" href="#testimonials">Testimonials</a>
-                        </li>
+                <div>
+                    <button class="navbar-toggler bg-white " type="button" data-bs-toggle="collapse "
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon text-white"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active text-white" aria-current="page" href="#home">Home</a>
+                            </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link text-white" aria-current="page" href="#contact">Contact</a>
-                        </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-warning" aria-current="page" href="#about">About me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" aria-current="page" href="#services">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" aria-current="page" href="#skills">Skills
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" aria-current="page" href="#projects">Projects
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" aria-current="page" href="#testimonials">Testimonials</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-white" aria-current="page" href="#contact">Contact</a>
+                            </li>
 
 
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
-            </div>
         </nav>
     </div>
 
@@ -384,9 +386,9 @@
 
                 <div class="col-md-4">
                     <div class="mb-2 ">
-                        <a href="./avaterImg/avater.html" target="_blank">
+                        <a href="./avaterImg/index.html" target="_blank">
                             <div class="img-hover-overlay">
-                                <img src="./images/avatarscreenshort.png" alt="" class="w-100 rounded" height="250px">
+                                <img src="./images/avatarimg.png" alt="" class="w-100 rounded" height="250px">
                             </div>
 
                         </a>
@@ -670,6 +672,11 @@
     </a>
 
 
+    <button type="button" class="btn btn-warning btn-lg" id="backToTopBtn" title="Back to Top">
+        ↑
+    </button>
+
+
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -689,21 +696,26 @@
     </script>
 
 
+    <script>
+        const backToTopBtn = document.getElementById("backToTopBtn");
 
+        // Show button after scrolling 300px
+        window.onscroll = function () {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+        // Scroll to top smoothly
+        backToTopBtn.addEventListener("click", function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
 
 
 

@@ -88,11 +88,23 @@ span {
   height: 50px;
   position: fixed;
   right: 20px;
-  bottom: 60px;
+  bottom: 30px;
 }
 
 
-
+ #backToTopBtn {
+    position: fixed;
+    bottom: 80px;
+    right: 28px;
+    /* display: none; */
+    z-index: 999;
+    border-radius: 50%;
+    width: 43px;
+    height: 43px;
+    font-size: 24px;
+    line-height: 1;
+    padding: 0;
+  }
 
 
 
